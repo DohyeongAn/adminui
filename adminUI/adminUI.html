@@ -244,8 +244,8 @@
               <div id="mark1" class="markwrap">
                 <i class="fa-solid fa-xmark"></i></div
             ></a>
-
-            <a href="#">
+            <!-- 모달팝업 -->
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div id="mark2" class="markwrap">
                 <i class="fa-solid fa-trash-can"></i>
               </div>
@@ -253,12 +253,12 @@
           </div>
 
           <div id="table_btn_right_wrap">
-            <a href="#">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal2">
               <div id="mark3" class="markwrap">
                 <i class="fa-regular fa-file-excel"></i>
               </div>
             </a>
-            <a href="#">
+            <a href="adminUI_1.html">
               <div id="mark4" class="markwrap">
                 <i class="fa-solid fa-plus"></i>
               </div>
@@ -280,6 +280,90 @@
         </div>
       </div>
     </footer>
+    <!-- 휴지통Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">삭제 확인</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">삭제 하시겠습니까?</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button type="button" class="btn btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 엑셀 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">excel 파일 첨부</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input
+                type="file"
+                class="form-control"
+                id="inputGroupFile04"
+                aria-describedby="inputGroupFileAddon04"
+                aria-label="Upload"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="inputGroupFileAddon04"
+              >
+                첨부
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button type="button" class="btn btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 부트스트랩 CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
